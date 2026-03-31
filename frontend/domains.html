@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальные домены — Devitex</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <style>
+        .warning-box {
+            padding: 20px 24px;
+            background: rgba(245, 197, 24, 0.08);
+            border-left: 3px solid var(--yellow);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 48px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--black);
+            max-width: 700px;
+        }
+
+        .domain-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 700px;
+        }
+
+        .domain-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            background: var(--light);
+            border-radius: 12px;
+        }
+
+        .domain-item .name {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .domain-item .purpose {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        .domain-item .verified {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--green);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .domain-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                padding: 16px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="index.html"><img src="logo.png" alt="Devitex"></a>
+        <button class="burger" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html#products">Продукты</a>
+            <a href="status.html">Статус</a>
+            <a href="domains.html">Домены</a>
+            <a href="mailto:devitex.contact@gmail.com">Контакты</a>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Официальные домены</h1>
+    </div>
+
+    <div class="page-content">
+        <div class="warning-box">
+            Devitex не несёт ответственности за содержимое сайтов, не указанных в данном списке. Если вы подозреваете мошенничество, сообщите нам: <a href="mailto:devitex.contact@gmail.com" style="color:var(--black);font-weight:500">devitex.contact@gmail.com</a>
+        </div>
+
+        <div class="domain-list">
+            <div class="domain-item">
+                <div>
+                    <div class="name">devitexsoftware.github.io</div>
+                    <div class="purpose">Сайт компании</div>
+                </div>
+                <div class="verified">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Подтверждён
+                </div>
+            </div>
+            <div class="domain-item">
+                <div>
+                    <div class="name">studyform.study</div>
+                    <div class="purpose">studyform — основная платформа</div>
+                </div>
+                <div class="verified">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Подтверждён
+                </div>
+            </div>
+            <div class="domain-item">
+                <div>
+                    <div class="name">studyform.ru</div>
+                    <div class="purpose">studyform — зеркало / редирект</div>
+                </div>
+                <div class="verified">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Подтверждён
+                </div>
+            </div>
+            <div class="domain-item">
+                <div>
+                    <div class="name">стадиформ.рф</div>
+                    <div class="purpose">studyform — кириллический домен</div>
+                </div>
+                <div class="verified">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Подтверждён
+                </div>
+            </div>
+            <div class="domain-item">
+                <div>
+                    <div class="name">punycode-converter.ru</div>
+                    <div class="purpose">Punycode Converter</div>
+                </div>
+                <div class="verified">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Подтверждён
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="status.html">Статус сервисов</a>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Devitex</span>
+            <a href="mailto:devitex.contact@gmail.com">devitex.contact@gmail.com</a>
+        </div>
+    </footer>
+
+</body>
+</html>
