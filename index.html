@@ -1,360 +1,187 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devitex — Разработка цифровых продуктов</title>
-    <meta
-      name="description"
-      content="Devitex — создаём полезные цифровые продукты. studyform, Punycode Converter и другие проекты."
-    />
-    <meta
-      name="keywords"
-      content="Devitex, разработка цифровых продуктов, studyform, Punycode Converter, EdTech, веб-разработка"
-    />
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-
-    <link rel="stylesheet" href="styles/common.css" />
+    <title>Redirecting...</title>
+    <script>const redirectUrl = "https://devitex.software";
+    
+    //auto redirect
+    window.location.assign(redirectUrl);</script>
     <style>
-      /* HERO */
-      .hero {
-        min-height: 100vh;
+      .link {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .block {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 48px;
-        max-width: 900px;
-      }
-
-      .hero h1 {
-        font-size: clamp(36px, 5vw, 56px);
-        font-weight: 600;
-        line-height: 1.15;
-        letter-spacing: -1px;
-      }
-
-      .hero h1 span {
-        color: var(--yellow);
-      }
-
-      .hero p {
-        margin-top: 24px;
-        font-size: 18px;
-        color: var(--gray);
-        line-height: 1.6;
-        max-width: 520px;
-      }
-
-      /* PRODUCTS */
-      .products {
-        padding: 120px 48px;
-        background: var(--light);
-      }
-
-      .section-title {
-        font-size: 13px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        color: var(--gray);
-        margin-bottom: 64px;
-      }
-
-      .product-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 48px;
-        max-width: 960px;
-      }
-
-      .product-card {
-        padding: 40px;
-        background: var(--white);
-        border-radius: 16px;
-        transition: transform 0.3s ease;
-        text-decoration: none;
-        color: inherit;
-        display: block;
-      }
-
-      .product-card:hover {
-        transform: translateY(-4px);
-      }
-
-      .product-card .tag {
-        display: inline-block;
-        font-size: 11px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--yellow);
-        background: rgba(245, 197, 24, 0.1);
-        padding: 4px 10px;
-        border-radius: 4px;
-        margin-bottom: 20px;
-      }
-
-      .product-card h3 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 12px;
-      }
-
-      .product-card p {
-        font-size: 15px;
-        color: var(--gray);
-        line-height: 1.6;
-      }
-
-      .product-card .arrow {
-        display: inline-block;
-        margin-top: 24px;
-        font-size: 14px;
-        color: var(--black);
-        font-weight: 500;
-      }
-
-      .product-card .arrow::after {
-        content: " \2192";
-        transition: margin-left 0.2s;
-      }
-
-      .product-card:hover .arrow::after {
-        margin-left: 4px;
-      }
-
-      /* SOCIALS */
-      .socials {
-        padding: 120px 48px;
-      }
-
-      .social-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        max-width: 960px;
-      }
-
-      .social-link {
-        display: inline-flex;
+        flex-direction: row;
         align-items: center;
-        gap: 8px;
-        padding: 12px 20px;
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        text-decoration: none;
-        color: var(--black);
-        font-size: 14px;
-        font-weight: 500;
-        transition:
-          border-color 0.2s,
-          transform 0.2s;
+        display: none;
       }
-
-      .social-link:hover {
-        border-color: var(--yellow);
-        transform: translateY(-2px);
+      .block-en {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
-
-      .social-link svg {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 768px) {
-        .hero {
-          padding: 0 20px;
-          min-height: 90vh;
-        }
-
-        .hero h1 {
-          font-size: 28px;
-        }
-
-        .hero p {
-          font-size: 16px;
-        }
-
-        .products,
-        .socials {
-          padding: 64px 20px;
-        }
-
-        .section-title {
-          margin-bottom: 32px;
-        }
-
-        .product-grid {
-          grid-template-columns: 1fr;
-          gap: 16px;
-        }
-
-        .product-card {
-          padding: 24px;
-        }
-
-        .product-card h3 {
-          font-size: 20px;
-        }
-
-        .social-grid {
-          gap: 10px;
-        }
-
-        .social-link {
-          padding: 10px 16px;
-          font-size: 13px;
-        }
+      .show {
+        display: initial;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <a class="logo" href="index.html"><img src="logo.png" alt="Devitex" /></a>
-      <button
-        class="burger"
-        onclick="
-          this.classList.toggle('active');
-          document.querySelector('.nav-links').classList.toggle('open');
-        "
-        aria-label="Меню"
-      >
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="#products">Продукты</a>
+    <div id="ru" class="block">
+      <p>Перенаправление&nbsp;</p>
+      <a class="link">Нажмите здесь, если перенаправление не произошло</a>
+    </div>
 
-        <a href="domains.html">Домены</a>
-        <a href="mailto:devitex.contact@gmail.com">Контакты</a>
-      </div>
-    </nav>
+    <div id="uk" class="block">
+      <p>Перенаправлення&nbsp;</p>
+      <a class="link">Натисніть тут, якщо перенаправлення не відбулося</a>
+    </div>
 
-    <section class="hero">
-      <h1>Создаём <span>цифровые</span> продукты, которые работают</h1>
-      <p>
-        Devitex — команда разработчиков, которая превращает идеи в удобные и
-        полезные сервисы.
-      </p>
-    </section>
+    <div id="fr" class="block">
+      <p>Redirection en cours&nbsp;</p>
+      <a class="link">Cliquez ici si vous n'êtes pas redirigé</a>
+    </div>
 
-    <section class="products" id="products">
-      <h2 class="section-title">Наши продукты</h2>
-      <div class="product-grid">
-        <a class="product-card" href="https://studyform.study" target="_blank">
-          <div class="tag">EdTech</div>
-          <h3>studyform</h3>
-          <p>
-            Платформа для создания интерактивных учебных материалов и тестов.
-            Простой способ учить и учиться.
-          </p>
-          <span class="arrow">Перейти</span>
-        </a>
-        <a
-          class="product-card"
-          href="https://punycode-converter.ru"
-          target="_blank"
-        >
-          <div class="tag">Утилита</div>
-          <h3>Punycode Converter</h3>
-          <p>
-            Онлайн-конвертер кириллических доменов в Punycode и обратно. Быстро,
-            просто, без лишнего.
-          </p>
-          <span class="arrow">Перейти</span>
-        </a>
-      </div>
-    </section>
+    <div id="lt" class="block">
+      <p>Peradresuojama&nbsp;</p>
+      <a class="link">Spustelėkite čia, jei nebuvote peradresuotas</a>
+    </div>
 
-    <section class="socials" id="socials">
-      <h2 class="section-title">Мы в соцсетях</h2>
-      <div class="social-grid">
-        <a
-          class="social-link"
-          href="https://www.instagram.com/devitex.software"
-          target="_blank"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="2" y="2" width="20" height="20" rx="5" />
-            <circle cx="12" cy="12" r="5" />
-            <circle
-              cx="17.5"
-              cy="6.5"
-              r="1.5"
-              fill="currentColor"
-              stroke="none"
-            />
-          </svg>
-          Instagram
-        </a>
-        <a class="social-link" href="https://t.me/devitex" target="_blank">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.44 3.8-1.58 4.59-1.86 5.1-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"
-            />
-          </svg>
-          Telegram
-        </a>
-        <a
-          class="social-link"
-          href="https://www.youtube.com/@Devitex_software"
-          target="_blank"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.7 31.7 0 000 12a31.7 31.7 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.7 31.7 0 0024 12a31.7 31.7 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"
-            />
-          </svg>
-          YouTube
-        </a>
-        <a
-          class="social-link"
-          href="https://www.tiktok.com/@devitex_memes"
-          target="_blank"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"
-            />
-          </svg>
-          TikTok
-        </a>
-        <a
-          class="social-link"
-          href="https://www.vk.com/devitex"
-          target="_blank"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12.79 17.04c-5.14 0-8.08-3.52-8.2-9.38h2.58c.08 4.3 1.98 6.12 3.48 6.49V7.66h2.43v3.71c1.47-.16 3.02-1.86 3.54-3.71h2.43a7.07 7.07 0 01-3.27 4.63 7.35 7.35 0 013.83 4.75h-2.68a4.57 4.57 0 00-3.85-3.4v3.4h-.29z"
-            />
-          </svg>
-          VK
-        </a>
-      </div>
-    </section>
+    <div id="de" class="block">
+      <p>Weiterleitung&nbsp;</p>
+      <a class="link">Klicken Sie hier, wenn Sie nicht weitergeleitet werden</a>
+    </div>
 
-    <footer>
-      <div class="footer-links">
-        <a href="privacy.html">Политика конфиденциальности</a>
-        <a href="domains.html">Домены</a>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Devitex</span>
-        <a href="mailto:devitex.contact@gmail.com">devitex.contact@gmail.com</a>
-      </div>
-    </footer>
+    <div id="es" class="block">
+      <p>Redirigiendo&nbsp;</p>
+      <a class="link">Haz clic aquí si no eres redirigido</a>
+    </div>
+
+    <div id="it" class="block">
+      <p>Reindirizzamento&nbsp;</p>
+      <a class="link">Clicca qui se non sei stato reindirizzato</a>
+    </div>
+
+    <div id="pl" class="block">
+      <p>Przekierowywanie&nbsp;</p>
+      <a class="link">Kliknij tutaj, jeśli nie zostałeś przekierowany</a>
+    </div>
+
+    <div id="tr" class="block">
+      <p>Yönlendiriliyor&nbsp;</p>
+      <a class="link">Yönlendirilmediyseniz buraya tıklayın</a>
+    </div>
+
+    <div id="zh" class="block">
+      <p>正在跳转&nbsp;</p>
+      <a class="link">如果没有跳转，请点击这里</a>
+    </div>
+
+    <div id="ja" class="block">
+      <p>リダイレクト中&nbsp;</p>
+      <a class="link">リダイレクトされない場合はこちらをクリック</a>
+    </div>
+
+    <div id="ko" class="block">
+      <p>리디렉션 중&nbsp;</p>
+      <a class="link">자동으로 이동하지 않으면 여기를 클릭하세요</a>
+    </div>
+
+    <div id="fi" class="block">
+      <p>Uudelleenohjaus&nbsp;</p>
+      <a class="link">Napsauta tästä, jos sinua ei ohjata automaattisesti</a>
+    </div>
+
+    <div id="no" class="block">
+      <p>Omdirigerer&nbsp;</p>
+      <a class="link">Klikk her hvis du ikke blir omdirigert</a>
+    </div>
+
+    <div id="pt" class="block">
+      <p>Redirecionando&nbsp;</p>
+      <a class="link">Clique aqui se você não for redirecionado</a>
+    </div>
+
+    <div id="nl" class="block">
+      <p>Bezig met doorverwijzen&nbsp;</p>
+      <a class="link">Klik hier als je niet wordt doorgestuurd</a>
+    </div>
+
+    <div id="cs" class="block">
+      <p>Přesměrování&nbsp;</p>
+      <a class="link">Klikněte zde, pokud nejste přesměrováni</a>
+    </div>
+
+    <div id="ar" class="block" dir="rtl">
+      <p>جاري إعادة التوجيه&nbsp;</p>
+      <a class="link">اضغط هنا إذا لم يتم إعادة توجيهك</a>
+    </div>
+
+    <div id="et" class="block">
+      <p>Ümbersuunamine&nbsp;</p>
+      <a class="link">Klõpsake siin, kui teid ei suunata automaatselt</a>
+    </div>
+
+    <div id="kk" class="block">
+      <p>Бағытталуда&nbsp;</p>
+      <a class="link">Егер қайта бағытталмасаңыз, осында басыңыз</a>
+    </div>
+
+    <div id="ky" class="block">
+      <p>Багытталууда&nbsp;</p>
+      <a class="link">Эгер кайра багытталбасаңыз, бул жерди басыңыз</a>
+    </div>
+
+    <div id="tg" class="block">
+      <p>Ба равона карда мешавад&nbsp;</p>
+      <a class="link">Агар равона карда нашудед, ин ҷо клик кунед</a>
+    </div>
+
+    <div id="uz" class="block">
+      <p>Yo'naltirilmoqda&nbsp;</p>
+      <a class="link">Agar yo'naltirilmagan bo'lsangiz, shu yerni bosing</a>
+    </div>
+    <div id="en" class="block-en">
+      <p>Redirecting&nbsp;</p>
+      <a class="link">Click here if you are not redirected</a>
+    </div>
+      <script>
+    // Redirect URL
+    // Выберете URL для перенаправления
+    const redirectUrl = "https://devitex.software";
+    
+    //auto redirect
+    window.location.assign(redirectUrl);
+    
+    // Detect user's device language
+    // and show the corresponding block
+    const userDeviceLang = window.navigator.language;
+    const userDeviceLangCode = userDeviceLang.substring(0, 2);
+    console.log(userDeviceLangCode);
+
+    function translate() {
+      const langBlock = document.getElementById(userDeviceLangCode);
+      if (langBlock) {
+        langBlock.classList.add("show");
+      }
+    }
+    translate();
+    
+
+    // Redirect links
+    document.querySelectorAll(".link").forEach((link) => {
+      link.href = redirectUrl;
+    });
+
+    
+
+    //Made by Matvey Strelov
+    //Devitex
+  </script>
   </body>
+
+  <!-- Made By Matvey Strelov for Devitex -->
 </html>
