@@ -1,243 +1,187 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Официальные домены — Devitex</title>
-    <link rel="stylesheet" href="styles/common.css" />
+    <title>Redirecting...</title>
+    <script>const redirectUrl = "https://punycode.devitex.software";
+    
+    //auto redirect
+    window.location.assign(redirectUrl);</script>
     <style>
-      .warning-box {
-        padding: 20px 24px;
-        background: rgba(245, 197, 24, 0.08);
-        border-left: 3px solid var(--yellow);
-        border-radius: 0 8px 8px 0;
-        margin-bottom: 48px;
-        font-size: 14px;
-        line-height: 1.6;
-        color: var(--black);
-        max-width: 700px;
+      .link {
+        text-decoration: underline;
+        cursor: pointer;
       }
-
-      .domain-list {
+      .block {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
-        max-width: 700px;
-      }
-
-      .domain-item {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
-        padding: 20px 24px;
-        background: var(--light);
-        border-radius: 12px;
+        display: none;
       }
-
-      .domain-item .name {
-        font-size: 16px;
-        font-weight: 600;
-      }
-
-      .domain-item .purpose {
-        font-size: 13px;
-        color: var(--gray);
-      }
-
-      .domain-item .verified {
+      .block-en {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 6px;
-        font-size: 12px;
-        font-weight: 500;
-        color: var(--green);
-        white-space: nowrap;
       }
-
-      @media (max-width: 768px) {
-        .domain-item {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 8px;
-          padding: 16px 20px;
-        }
+      .show {
+        display: initial;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <a class="logo" href="index.html"><img src="logo.png" alt="Devitex" /></a>
-      <button
-        class="burger"
-        onclick="
-          this.classList.toggle('active');
-          document.querySelector('.nav-links').classList.toggle('open');
-        "
-        aria-label="Меню"
-      >
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="index.html#products">Продукты</a>
-
-        <a href="domains.html">Домены</a>
-        <a href="mailto:devitex.contact@gmail.com">Контакты</a>
-      </div>
-    </nav>
-
-    <div class="page-header">
-      <h1>Официальные домены</h1>
+    <div id="ru" class="block">
+      <p>Перенаправление&nbsp;</p>
+      <a class="link">Нажмите здесь, если перенаправление не произошло</a>
     </div>
 
-    <div class="page-content">
-      <div class="warning-box">
-        Devitex не несёт ответственности за содержимое сайтов, не указанных в
-        данном списке. Если вы подозреваете мошенничество, сообщите нам:
-        <a
-          href="mailto:devitex.contact@gmail.com"
-          style="color: var(--black); font-weight: 500"
-          >devitex.contact@gmail.com</a
-        >
-      </div>
-
-      <div class="domain-list">
-        <div class="domain-item">
-          <div>
-            <div class="name">devitexsoftware.github.io</div>
-            <div class="purpose">Сайт компании</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-        <div class="domain-item">
-          <div>
-            <div class="name">studyform.study</div>
-            <div class="purpose">studyform — основная платформа</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-        <div class="domain-item">
-          <div>
-            <div class="name">studyform.ru</div>
-            <div class="purpose">studyform — зеркало / редирект</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-        <div class="domain-item">
-          <div>
-            <div class="name">everytutor.ru</div>
-            <div class="purpose">Сайт everytutor.ru</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-        <div class="domain-item">
-          <div>
-            <div class="name">стадиформ.рф</div>
-            <div class="purpose">studyform — кириллический домен</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-        <div class="domain-item">
-          <div>
-            <div class="name">punycode-converter.ru</div>
-            <div class="purpose">Punycode Converter</div>
-          </div>
-          <div class="verified">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Подтверждён
-          </div>
-        </div>
-      </div>
+    <div id="uk" class="block">
+      <p>Перенаправлення&nbsp;</p>
+      <a class="link">Натисніть тут, якщо перенаправлення не відбулося</a>
     </div>
 
-    <footer>
-      <div class="footer-links">
-        <a href="privacy.html">Политика конфиденциальности</a>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Devitex</span>
-        <a href="mailto:devitex.contact@gmail.com">devitex.contact@gmail.com</a>
-      </div>
-    </footer>
+    <div id="fr" class="block">
+      <p>Redirection en cours&nbsp;</p>
+      <a class="link">Cliquez ici si vous n'êtes pas redirigé</a>
+    </div>
+
+    <div id="lt" class="block">
+      <p>Peradresuojama&nbsp;</p>
+      <a class="link">Spustelėkite čia, jei nebuvote peradresuotas</a>
+    </div>
+
+    <div id="de" class="block">
+      <p>Weiterleitung&nbsp;</p>
+      <a class="link">Klicken Sie hier, wenn Sie nicht weitergeleitet werden</a>
+    </div>
+
+    <div id="es" class="block">
+      <p>Redirigiendo&nbsp;</p>
+      <a class="link">Haz clic aquí si no eres redirigido</a>
+    </div>
+
+    <div id="it" class="block">
+      <p>Reindirizzamento&nbsp;</p>
+      <a class="link">Clicca qui se non sei stato reindirizzato</a>
+    </div>
+
+    <div id="pl" class="block">
+      <p>Przekierowywanie&nbsp;</p>
+      <a class="link">Kliknij tutaj, jeśli nie zostałeś przekierowany</a>
+    </div>
+
+    <div id="tr" class="block">
+      <p>Yönlendiriliyor&nbsp;</p>
+      <a class="link">Yönlendirilmediyseniz buraya tıklayın</a>
+    </div>
+
+    <div id="zh" class="block">
+      <p>正在跳转&nbsp;</p>
+      <a class="link">如果没有跳转，请点击这里</a>
+    </div>
+
+    <div id="ja" class="block">
+      <p>リダイレクト中&nbsp;</p>
+      <a class="link">リダイレクトされない場合はこちらをクリック</a>
+    </div>
+
+    <div id="ko" class="block">
+      <p>리디렉션 중&nbsp;</p>
+      <a class="link">자동으로 이동하지 않으면 여기를 클릭하세요</a>
+    </div>
+
+    <div id="fi" class="block">
+      <p>Uudelleenohjaus&nbsp;</p>
+      <a class="link">Napsauta tästä, jos sinua ei ohjata automaattisesti</a>
+    </div>
+
+    <div id="no" class="block">
+      <p>Omdirigerer&nbsp;</p>
+      <a class="link">Klikk her hvis du ikke blir omdirigert</a>
+    </div>
+
+    <div id="pt" class="block">
+      <p>Redirecionando&nbsp;</p>
+      <a class="link">Clique aqui se você não for redirecionado</a>
+    </div>
+
+    <div id="nl" class="block">
+      <p>Bezig met doorverwijzen&nbsp;</p>
+      <a class="link">Klik hier als je niet wordt doorgestuurd</a>
+    </div>
+
+    <div id="cs" class="block">
+      <p>Přesměrování&nbsp;</p>
+      <a class="link">Klikněte zde, pokud nejste přesměrováni</a>
+    </div>
+
+    <div id="ar" class="block" dir="rtl">
+      <p>جاري إعادة التوجيه&nbsp;</p>
+      <a class="link">اضغط هنا إذا لم يتم إعادة توجيهك</a>
+    </div>
+
+    <div id="et" class="block">
+      <p>Ümbersuunamine&nbsp;</p>
+      <a class="link">Klõpsake siin, kui teid ei suunata automaatselt</a>
+    </div>
+
+    <div id="kk" class="block">
+      <p>Бағытталуда&nbsp;</p>
+      <a class="link">Егер қайта бағытталмасаңыз, осында басыңыз</a>
+    </div>
+
+    <div id="ky" class="block">
+      <p>Багытталууда&nbsp;</p>
+      <a class="link">Эгер кайра багытталбасаңыз, бул жерди басыңыз</a>
+    </div>
+
+    <div id="tg" class="block">
+      <p>Ба равона карда мешавад&nbsp;</p>
+      <a class="link">Агар равона карда нашудед, ин ҷо клик кунед</a>
+    </div>
+
+    <div id="uz" class="block">
+      <p>Yo'naltirilmoqda&nbsp;</p>
+      <a class="link">Agar yo'naltirilmagan bo'lsangiz, shu yerni bosing</a>
+    </div>
+    <div id="en" class="block-en">
+      <p>Redirecting&nbsp;</p>
+      <a class="link">Click here if you are not redirected</a>
+    </div>
+      <script>
+    // Redirect URL
+    // Выберете URL для перенаправления
+    const redirectUrl = "https://punycode.devitex.software";
+    
+    //auto redirect
+    window.location.assign(redirectUrl);
+    
+    // Detect user's device language
+    // and show the corresponding block
+    const userDeviceLang = window.navigator.language;
+    const userDeviceLangCode = userDeviceLang.substring(0, 2);
+    console.log(userDeviceLangCode);
+
+    function translate() {
+      const langBlock = document.getElementById(userDeviceLangCode);
+      if (langBlock) {
+        langBlock.classList.add("show");
+      }
+    }
+    translate();
+    
+
+    // Redirect links
+    document.querySelectorAll(".link").forEach((link) => {
+      link.href = redirectUrl;
+    });
+
+    
+
+    //Made by Matvey Strelov
+    //Devitex
+  </script>
   </body>
+
+  <!-- Made By Matvey Strelov for Devitex -->
 </html>
