@@ -1,1 +1,0 @@
-# devitex.software
